@@ -1,0 +1,266 @@
+/* #speech-bubble {
+  width: 120px;
+  height: 80px;
+  background: #5ac4ed;
+  position: absolute;
+  left: 100px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+} */
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#speech-bubble:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #5ac4ed;
+  border-bottom: 13px solid transparent;
+  margin: 13px 0 0 -25px;
+}
+
+.progress-bar {
+  border-radius: 65px;
+  width: 100%;
+  overflow: hidden;
+}
+span {
+  display: block;
+}
+.bar {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.progress {
+  width: 50%;
+  color: #fff;
+  background-color: red;
+  padding: 20px;
+  animation: loader 8s ease infinite;
+  border-radius: 65px;
+  position: relative;
+}
+.progress::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 12%;
+  right: 1%;
+}
+
+@keyframes loader {
+  0% {
+    width: 10%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 55%;
+  }
+  75% {
+    width: 78%;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+/* ACTUAL CODES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway";
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/bg-desktop.png);
+  background-position: bottom;
+  background-position-y: 120%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(229, 57%, 11%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 5rem;
+  align-items: end;
+}
+
+.logo-section {
+  width: 30rem;
+  /* height: 20rem; */
+  background-color: hsl(228, 56%, 26%);
+  padding: 4rem;
+  border-radius: 8px 100px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  padding: 1.2rem;
+  border-radius: 10px;
+  height: 85%;
+}
+
+/* .icon-1 {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  padding: 1rem;
+  height: 90%;
+}
+.icon-2 {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  padding: 1rem;
+  height: 90%;
+}
+.icon-3 {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  padding: 1rem;
+  height: 90%;
+} */
+
+.dashbord-section {
+  color: #fff;
+  width: 51rem;
+  /* height: 15rem; */
+  background-color: hsl(228, 56%, 26%);
+  padding: 4rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.dash-text {
+  font-size: 1.5rem;
+  display: flex;
+  color: hsl(243, 100%, 93%);
+  margin-bottom: 2rem;
+}
+.bold {
+  font-weight: 700;
+  margin: 0 0.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  border-radius: 500rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.bar {
+  background-color: rgba(12, 18, 44, 0.356);
+  padding: 0.3rem;
+}
+span {
+  display: block;
+}
+
+.progress {
+  width: 85%;
+  padding: 0.6rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 500rem;
+  position: relative;
+}
+.progress::after {
+  content: "";
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 12%;
+  right: 0.5%;
+}
+
+.gb-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gb-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.pos-abs {
+  position: absolute;
+  width: 17rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 8px;
+  top: -28%;
+  right: 8%;
+  justify-content: center;
+}
+
+.pos-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(229, 57%, 11%);
+  text-decoration: bolder;
+}
+
+.pos-text {
+  font-size: 1.2rem;
+  color: hsl(229, 7%, 55%);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  font-family: inherit;
+}
+.pos-abs::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid #fff;
+  border-right: 1.5rem solid #fff;
+  border-bottom: 1.5rem solid transparent;
+  border-left: 1.5rem solid transparent;
+  position: absolute;
+  bottom: -30%;
+  right: 0%;
+}
